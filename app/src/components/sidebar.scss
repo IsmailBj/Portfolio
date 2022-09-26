@@ -132,19 +132,19 @@ $bg-color: #20202a;
                     width: 0;
                 }
                 .react{
-                    animation: progress1 1.6s linear 0s alternate;
+                    animation: progress1 2s ease-in 0s alternate;
                     width: 90%;
                 }
                 .angular{
-                    animation: progress2 1.6s linear 0s alternate;
+                    animation: progress2 2s ease-in 0s alternate;
                     width: 70%;
                 }
                 .node{
-                    animation: progress3 1.6s linear 0s alternate;
+                    animation: progress3 2s ease-in 0s alternate;
                     width: 50%;
                 }
                 .sass{
-                    animation: progress4 1.6s linear 0s alternate;
+                    animation: progress4 2s ease-in 0s alternate;
                     width: 80%;
                 }
             }
@@ -192,13 +192,13 @@ $bg-color: #20202a;
 
 @keyframes progress2  {
     0% {width: 0%;}
-    30% {width: 0%;}
+    50% {width: 0%;}
     100% {width: 70%;}
 }
 
 @keyframes progress3  {
     0% {width: 0%;}
-    30% {width: 0%;}
+    10% {width: 0%;}
     100% {width: 50%;}
 }
 
