@@ -11,6 +11,7 @@ $bg-color: #20202a;
     height: 100vh;
     align-items: stretch;
     overflow: hidden;
+    z-index: 2;
     .hamburger-menu{
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
         display: flex;
@@ -55,6 +56,29 @@ $bg-color: #20202a;
                     border-radius: 20px; 
                  }
             }
+        }
+    }
+    .download-cv{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+        &:hover{
+            color: $color-white;
+            cursor: pointer;
+        }
+        svg{
+            color: $color-dark;
+            transition: 0.55s linear;
+            width: 30px;
+            height: 30px;
+        }
+        span{
+            color: $color-dark;
+            font-size: 1.5rem;  
         }
     }
 
