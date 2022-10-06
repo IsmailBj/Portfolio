@@ -6,3 +6,8 @@
   align-items: stretch;
   overflow: hidden;
 }
+
+.main-container.expendMenu{
+  transition: 1.55s ease-in-out;
+  grid-template-columns: 0% 75% 25%;
+}

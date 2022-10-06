@@ -1,20 +1,26 @@
-import React ,{useEffect} from 'react';
+import React ,{useEffect, useState} from 'react';
 import './App.scss';
 import Sidebar from './components/sidebar'
 import Center from './components/Center'
 import Header from './components/headerRight'
+import {MobileView, isMobile } from 'react-device-detect';
 
 function App() {
 
-  useEffect(()=>{
-    console.log("run")
-  },[])
+  const [isMenu, setIsMenu] = useState(false)
 
+  useEffect(()=>{
+    console.log(isMenu)
+  },[isMenu])
+  
   return (
-    <div className="main-container">
+    <div className={`main-container ${isMenu ? "expendMenu" : ""}`}>
         <Sidebar/>
         <Center/>
-        <Header/>
+        <Header
+          isMenu={isMenu}
+          setIsMenu={setIsMenu}
+        />
     </div>
   );
 }

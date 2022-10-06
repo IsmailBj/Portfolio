@@ -5,9 +5,11 @@ import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 
 const Header = (props: any) =>{
 
+    const {setIsMenu, isMenu} = props
+
     return (
-        <div className="header-container">
-            <div className="hamburger-menu">
+        <div className={`header-container ${isMenu ? "expend" : ""}`}>
+            <div className="hamburger-menu" onClick={()=>setIsMenu(!isMenu)}>
                 <FontAwesomeIcon icon={faBars}/>
             </div>
             <div className="nav-list">
