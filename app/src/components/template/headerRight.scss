@@ -4,20 +4,22 @@ $color-gold: gold;
 $bg-color: #20202a;
 
 .header-container{
-    width: 100%;
     background-color: $bg-color;
-    display: grid;
-    grid-template-rows: 10% 80% 10%;
-    grid-column: auto;
+    display: flex;
+    width: 5%;
     height: 100vh;
-    align-items: stretch;
+    transition: 0.55s ease-in-out;
     overflow: hidden;
     z-index: 2;
+    flex-direction: column;
+    justify-content: space-between;
     .hamburger-menu{
         background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        flex-basis: 10%;
         svg{
             color: $color-dark;;
             cursor: pointer;
@@ -29,37 +31,51 @@ $bg-color: #20202a;
             }
         }
     }
-    .nav-list{
+    .nav-container{
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 50px 0;
-        height: fit-content;
-        .home{
+        justify-content: center;
+        gap: 20px;
+        .nav-list{
+            flex-basis: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 30% 0px;
+            height: fit-content;
+            transition: 0.2s ease-out;
             transform: rotate(90deg);
-            color: $color-white;
-            font-size: 26px;
             cursor: pointer;
-            overflow: hidden;
-            .underline{
-               background-color: $color-white;
-               width: 0%;
-               height: 5px;
-               border-radius: 20px; 
-               transition: 0.2s ease-out;
+           
+            .text{
+                color: $color-white;
+                font-size: 26px;
+                overflow: hidden;
+                .underline{
+                   background-color: $color-white;
+                   width: 0%;
+                   height: 5px;
+                   border-radius: 20px; 
+                   transition: 0.2s ease-out;
+                }
             }
             &:hover{
+                scale: 1.1;
                 .underline{
                     background-color: $color-white;
                     width: 100%;
                     height: 5px;
-                    border-radius: 20px; 
+                    border-radius: 20px;
+                    
                  }
             }
         }
     }
+
     .download-cv{
+        flex-basis: 10%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -86,7 +102,10 @@ $bg-color: #20202a;
 }
 
 .header-container.expend {
-    background-color: red;
+    .nav-list{
+        transform: rotate(0deg);
+        padding: 5% 0px;
+    } 
 
 }
 

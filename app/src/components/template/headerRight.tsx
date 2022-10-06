@@ -12,9 +12,16 @@ const Header = (props: any) =>{
             <div className="hamburger-menu" onClick={()=>setIsMenu(!isMenu)}>
                 <FontAwesomeIcon icon={faBars}/>
             </div>
-            <div className="nav-list">
-                <div className="home">Home<div className="underline"></div></div>
-                
+            <div className="nav-container">
+                <div className="nav-list">
+                    <div className="text">Home<div className="underline"></div></div>
+                </div>
+                <div className="nav-list">
+                    <div className="text">Projects<div className="underline"></div></div>
+                </div>
+                <div className="nav-list">
+                    <div className="text">About<div className="underline"></div></div>
+                </div>
             </div>
             <div className="download-cv"><FontAwesomeIcon icon={faDownload}/><span>CV</span></div>
         </div>

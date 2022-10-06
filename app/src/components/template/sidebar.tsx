@@ -3,7 +3,7 @@ import React from "react";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
-import Avatar from '../assets/img/userAvatar.png'
+import Avatar from '../../assets/img/userAvatar.png'
 
 
 const Sidebar = (props: any) =>{

@@ -4,11 +4,16 @@ $color-dark: #8c8c8e;
 $color-gold: gold;
 $bg-color: #20202a;
 
+body{
+    background: $bg-color;
+}
 
 .sidebar-container{
     background: $bg-color;
     position: relative;
     z-index: 999;
+    width: 20%;
+    left: 0;
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     transition: 0.55s ease-in-out;
     overflow: auto;

@@ -1,8 +1,8 @@
 import React ,{useEffect, useState} from 'react';
 import './App.scss';
-import Sidebar from './components/sidebar'
-import Center from './components/Center'
-import Header from './components/headerRight'
+import Sidebar from './components/template/sidebar'
+import Center from './components/template/Center'
+import Header from './components/template/headerRight'
 import {MobileView, isMobile } from 'react-device-detect';
 
 function App() {

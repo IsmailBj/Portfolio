@@ -1,13 +1,22 @@
 .main-container {
-  display: grid;
-  grid-template-columns: 20% 75% 5%;
-  grid-row: auto;
+  display: flex;
   height: 100vh;
-  align-items: stretch;
+  width: 100vw;
   overflow: hidden;
+  transition: 0.55s ease-in-out;
 }
 
+
+
 .main-container.expendMenu{
-  transition: 1.55s ease-in-out;
-  grid-template-columns: 0% 75% 25%;
+  transition: 0.55s ease-in-out;
+  .sidebar-container{
+    position: relative;
+    left: -20%;
+    width: 0%;
+  }
+  .header-container{
+    width: 20%;
+
+  }
 }
