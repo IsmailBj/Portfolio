@@ -1,0 +1,49 @@
+@import  "../../../variables.scss";
+
+.about-container {
+   
+    padding: 20px;
+    background: url('../../../assets//img//Mountains.jpg');
+    background-color: $bg-color;
+    color: $color-white;
+    background-position: 32% 24%;
+
+    .blur-cover{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        background-color: #20202a8c;
+        flex-direction: row;
+        height: 400px;
+        .text-right{
+            width: 20%;
+            font-size: 2em;
+            display: flex;
+            text-align: center;
+            padding-left: 2em;
+        }
+        .bar{
+            height: 70%;
+            width: 3px;
+            background: $color-white;
+            border-radius: 20px;
+            margin: 33px;
+        }
+        .text-left{
+            width:70%;
+            padding-left: 1em;
+            .About-bold{
+                font-weight: bold;
+                font-size: 2.2rem;
+                line-height: 0;
+            }
+            .about-text{
+                font-size: 1.5em;
+                letter-spacing: 0em;
+                line-height: 1.2;
+            }
+        }
+    }
+    
+}

@@ -1,4 +1,8 @@
+@import  "../../variables.scss";
+
 .center-container{
-    background-color: red;
+    background-color: $bg-color;
     width: 80%;
+    padding: 20px;
+    overflow-y: auto;
 }
