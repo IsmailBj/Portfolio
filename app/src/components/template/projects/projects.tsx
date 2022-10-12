@@ -1,5 +1,6 @@
 import React from "react"
 import './projects.scss'
+import ImgProject from '../../../assets/projects/img-holder.png'
 
 const projects = () =>{
 
@@ -14,12 +15,31 @@ const projects = () =>{
                 <span className="ctg Mobile-App">Mobile App</span>
             </div>
             <div className="projects-list">
-                <div className="project-box"></div>
-                <div className="project-box"></div>
-                <div className="project-box"></div>
-                <div className="project-box"></div>
-                <div className="project-box"></div>
-                <div className="project-box"></div>
+
+                <div className="project-box">
+                    <img src={ImgProject} alt="404" />
+                    <div className="pro-title">Comming soon</div>
+                </div>
+                <div className="project-box">
+                    <img src={ImgProject} alt="404" />
+                    <div className="pro-title">Comming soon</div>
+                </div>
+                <div className="project-box">
+                    <img src={ImgProject} alt="404" />
+                    <div className="pro-title">Comming soon</div>
+                </div>
+                <div className="project-box">
+                    <img src={ImgProject} alt="404" />
+                    <div className="pro-title">Comming soon</div>
+                </div>
+                <div className="project-box">
+                    <img src={ImgProject} alt="404" />
+                    <div className="pro-title">Comming soon</div>
+                </div>
+                <div className="project-box">
+                    <img src={ImgProject} alt="404" />
+                    <div className="pro-title">Comming soon</div>
+                </div>
             </div>
         </div>
     )

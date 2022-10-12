@@ -27,6 +27,49 @@
                 color: $color-white;
             }
         }
+      
+    }
+    .projects-list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        gap: 20px;
+        .project-box{
+            width: calc(30% - 40px);
+            height: 250px;
+            background-color: $bg-color;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            img {
+                position: relative;
+                width: 100%;
+                border-radius: 5px;
+                height: calc(100% - 50px);
+                display: flex;
+                bottom: 0;
+                transition: 0.25s ease-out;
+            }
+            .pro-title{
+                color: $color-white;
+                height: calc(100% - 200px);
+                width: 100%;
+                font-size: 1.4em;
+                display: flex;
+                align-items: center;
+            }
+
+            &:hover{
+                img{
+                    bottom: 14%;
+                }
+            }
+        }
     }
 }
 

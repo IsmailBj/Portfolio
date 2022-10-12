@@ -11,14 +11,14 @@ const Center = (props: any) =>{
             <div className="banner-top">
                 <AboutMe/>
             </div>
+            <div className="projects">
+                <Projects/>
+            </div>
             <div className="experience">
                 <Experience/>
             </div>
             <div className="education">
                 <Education/>
-            </div>
-            <div className="projects">
-                <Projects/>
             </div>
         </div>
     )

@@ -41,7 +41,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            padding: 30% 0px;
+            padding: 3em 0px;
             height: fit-content;
             transition: 0.2s ease-out;
             transform: rotate(90deg);
@@ -51,6 +51,12 @@
                 color: $color-white;
                 font-size: 26px;
                 overflow: hidden;
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
                 .underline{
                    background-color: $color-white;
                    width: 0%;
