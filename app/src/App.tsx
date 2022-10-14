@@ -4,16 +4,14 @@ import Sidebar from './components/template/sidebar'
 import Center from './components/template/Center'
 import Header from './components/template/headerRight'
 import {MobileView, isMobile } from 'react-device-detect';
+import data from './data/userData.json'
 
 
 function App() {
-
+  
   const [isMenu, setIsMenu] = useState(false)
 
-  useEffect(()=>{
-    console.log(isMenu)
-  },[isMenu])
-  
+
   return (
     <div className={`main-container ${isMenu ? "expendMenu" : ""}`}>
         <Sidebar/>
