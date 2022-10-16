@@ -1,12 +1,32 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import './sidebar.scss'
-import React from "react";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import {faLinkedin, faGitlab, faGithub} from "@fortawesome/free-brands-svg-icons"
 import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
 import Avatar from '../../assets/img/userAvatar.png'
+import userData from '../../data/userData.json'
 
 
 const Sidebar = (props: any) =>{
+
+    const {
+        name,
+        surname,
+        country,
+        city,
+        skills,
+        media,
+        email
+    } = userData
+    
+    const {linkedIn,github,gitlab} = media
+
+    function getAge() {
+        let ageInMilliseconds:any = (new Date().getTime() - new Date('1999-11-28').getTime());
+        return Math.floor(ageInMilliseconds/1000/60/60/24/365)
+     }
+
+
     return (
     <div className="sidebar-container">
         <div className="avatar-container">
@@ -14,7 +34,7 @@ const Sidebar = (props: any) =>{
                <img src={Avatar} alt="" />
             </div>
             <div className='info-user'>
-                <span className='name-surname'>Ismail Bajrami 
+                <span className='name-surname'>{name} {surname} 
                 <span className='linkedIn'>
                     <FontAwesomeIcon icon={faLinkedin}/>
                 </span>
@@ -23,21 +43,24 @@ const Sidebar = (props: any) =>{
             </div>
         </div>
         <div className="info-contianer">
+               
             <div className="info-location">
                 <div className='residence'>
                     <span className='info'>Residence:</span>
-                    <span className='data'>North Macedonia</span>
+                    <span className='data'>{country}</span>
                 </div>
                 <div className='city'>
                     <span className='info'>City:</span>
-                    <span className='data'>Skopje</span>
+                    <span className='data'>{city}</span>
                 </div>
                 <div className='age'>
                     <span className='info'>Age:</span>
-                    <span className='data'>22</span>
+                    <span className='data'>{getAge()}</span>
                 </div>
+
             </div>
                 <div className='divider'></div>
+                
                 <div className="lang-container">
                     <div className='lang-en lang'><b>English</b>100%</div>
                     <div className='lang-alb lang'><b>Albanian</b>100%</div>
@@ -71,16 +94,15 @@ const Sidebar = (props: any) =>{
                     </div>
                     <div className='divider'></div>
                     <div className="soft-skills-container">
-                        <div className='soft-skill'><FontAwesomeIcon icon={faCheckCircle}/><span>Git Gitlab/Github</span></div>
-                        <div className='soft-skill'><FontAwesomeIcon icon={faCheckCircle}/><span>MongoDB/PostgreSQL</span></div>
-                        <div className='soft-skill'><FontAwesomeIcon icon={faCheckCircle}/><span>Firebase</span></div>
-                        <div className='soft-skill'><FontAwesomeIcon icon={faCheckCircle}/><span>Python {"{Pandas,Pycharm}"}</span></div>
+                        {skills.map((skill: any, index: any)=>{
+                            return  <div className={'soft-skill ' + skill} key={index}><FontAwesomeIcon icon={faCheckCircle}/><span>{skill}</span></div>
+                        })}
                     </div>
         
                 </div>
         </div>
            
-            <div className="mail-container"><span className='g-mail'>Ismo.bjr@gmail.com</span></div>
+            <div className="mail-container"><span className='g-mail'>{email}</span></div>
     </div>
     )
 }

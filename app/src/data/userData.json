@@ -4,9 +4,19 @@
     "country": "North Macedonia",
     "city": "Skopje",
     "skills": ["Git Gitlab/Github","MongoDB","PostgreSQL","Firebase","Pandas","Pycharm"],
-    "linkedIn": "https://www.linkedin.com/in/ismail-bajrami-b8aa82193/",
-    "github": "https://github.com/IsmailBj",
-    "gitlab": "https://gitlab.com/ismo.bjr",
-    "email": "Ismo.bjr@gmail.com",
-    "about": "Hi im Doing my Studies at IU International University of Applied Sciences, I completed Seavus academy and got the title full stack Web Development, I've dealt with many different types of technology throughout my life, I'm proficient at dealing with technical issues of all sorts, I have excellent communication skills, I work very well in groups"
+    "media": {
+        "linkedIn": {
+            "url": "https://www.linkedin.com/in/ismail-bajrami-b8aa82193/",
+            "name":  "LinkedIn"
+        },
+        "github": {
+            "url": "https://github.com/IsmailBj",
+            "name": "Github"
+        },
+        "gitlab": {
+            "url": "https://gitlab.com/ismo.bjr",
+            "name": "Gitlab"
+        }
+    },
+    "email": "Ismo.bjr@gmail.com"
 }
