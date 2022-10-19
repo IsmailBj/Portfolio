@@ -1,8 +1,9 @@
 import React from "react"
 import './projects.scss'
 import ImgProject from '../../../assets/projects/img-holder.png'
+import { opneProject } from "../../functions/openProject";
 
-const projects = () =>{
+const projects = (props: any) =>{
 
     return (
         <div className="projects-container">
@@ -16,7 +17,7 @@ const projects = () =>{
             </div>
             <div className="projects-list">
 
-                <div className="project-box">
+                <div className="project-box" onClick={props.setShowProject(true)}>
                     <img src={ImgProject} alt="404" />
                     <div className="pro-title">Comming soon</div>
                 </div>
