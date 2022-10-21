@@ -1,3 +1,5 @@
+@import  "../../../../variables.scss";
+
 
 .divider{
     background: $color-dark;
@@ -5,3 +7,123 @@
     height: 1px;
     opacity: 0.3;
 }
+
+
+
+.project-container{
+    display: flex;
+    width: calc(80% - 40px);
+    padding:  20px;
+    margin: 20px;
+    align-items: center;
+    flex-direction: column;
+    background: $linear-bg;
+    .info-container{
+        width: 100%;
+        .close-container{
+            float: right;
+            background-color: $bg-color;
+            border-radius: 20px;
+            box-shadow: inset 2px 2px 4px 0 $color-dark;
+            color: $color-dark;
+            padding: 8px 13px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: inset 0px 0px 4px 4px $shadow;
+            }
+        }
+        .project-title{
+            display: flex;
+            margin: 20px 10px;
+            flex-direction: column;
+            color: $color-white;
+            .title{
+                font-size: 2rem;
+            }
+            .category-container{
+
+            }
+            .category-name{
+                color: $color-dark;
+            }
+        }
+
+        .project-info{
+            margin: 20px 10px;
+            display: flex;
+            .project-about{
+               width: 80%;
+               padding: 0 20px 0 0;
+               .about {
+                font-size: 1.6rem;
+                color: $color-white;
+                padding-bottom: 10px;
+            }
+            .about-text{
+                color: $color-dark;
+               }
+            }
+            .project-info-details{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+
+            }
+            .project-info-details{
+                .project-info-text{
+                    font-size: 1.2rem;
+                    color: $color-white;
+                }
+                .sub-info{
+                    font-size: 1.0rem;
+                    .sub{
+                        color: $color-dark;
+                        span{
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .project-view{
+        width: 100%;
+        .device-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            .device-list{
+                display: flex;
+                width: 30%;
+                margin: 20px;
+                flex-direction: row;
+                justify-content: space-around;
+                .device{
+                    width: 4rem;
+                    background: $bg-color;
+                    border-radius: 5px;
+                    color: $color-dark;
+                    border: 1px solid $color-dark;
+                    height: 3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    &:hover{
+                        color: $color-white;
+                        border: 1px solid $color-white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+

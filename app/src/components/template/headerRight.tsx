@@ -24,11 +24,6 @@ const Header = (props: any, ref: any) =>{
                     <div className="text">Education<div className="underline"></div></div>
                 </div>
             </div>
-            {/* <div className="media">
-                    <a href={github.url} className={"media-links " + github.name}><FontAwesomeIcon icon={faGithub}/><span>{github.name}</span></a>
-                    <a href={gitlab.url} className={"media-links " + gitlab.name}><FontAwesomeIcon icon={faGitlab}/><span>{gitlab.name}</span></a>
-                </div>
-                <div className='divider'></div> */}
             <div className="download-cv"><FontAwesomeIcon icon={faDownload}/><span>CV</span></div>
         </div>
     )
