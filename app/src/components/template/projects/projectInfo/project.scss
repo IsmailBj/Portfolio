@@ -18,6 +18,7 @@
     align-items: center;
     flex-direction: column;
     background: $linear-bg;
+    overflow-y: auto;
     .info-container{
         width: 100%;
         .close-container{
@@ -78,6 +79,16 @@
                 }
                 .sub-info{
                     font-size: 1.0rem;
+                    .path{
+                        a{
+                            color: $color-dark;
+                            text-decoration: none;
+                            &:hover{
+                                color: $color-white;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
                     .sub{
                         color: $color-dark;
                         span{
@@ -90,6 +101,7 @@
     }
     .project-view{
         width: 100%;
+
         .device-container{
             width: 100%;
             display: flex;
@@ -122,6 +134,22 @@
                         border: 1px solid $color-white;
                     }
                 }
+            }
+        }
+
+        .img-container{
+            width: 100%;
+            height: fit-content;
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: calc(100% - 250px);
+                height: calc(100% - 250px);
+                padding: 20px;
+                background-color: $bg-color;
+                border-radius: 20px;
             }
         }
         

@@ -18,5 +18,21 @@
             "name": "Gitlab"
         }
     },
-    "email": "Ismo.bjr@gmail.com"
+
+    "email": "Ismo.bjr@gmail.com",
+
+    "projects" : {
+        "Bflow": {
+            "title": "Bflow",
+            "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, deleniti voluptate? Inventore nisi id tenetur ad. Veniam necessitatibus ut odio, sequi quis architecto suscipit qui voluptates repudiandae, rerum sapiente illum.",
+            "date": "2020",
+            "tools": ["React","Sass"],
+            "github": "https://github.com/IsmailBj/BFlow",
+            "layout": {
+                "desktop": ["desktop-one.png","desktop-two.png","desktop-three.png"],
+                "mobile": ["tablet-one.png","tablet-two.png","tablet-three.png"],
+                "tablet": ["mobile-one.png","mobile-two.png","mobile-three.png"]
+            }
+        }
+    }
 }

@@ -1,10 +1,10 @@
 import React from "react"
 import './projects.scss'
 import ImgProject from '../../../assets/projects/img-holder.png'
-
+import userData from '../../../data/userData.json'
 
 const projects = (props: any) =>{
-
+    const {projects} = userData
     return (
         <div className="projects-container">
             <div className="title">LATEST PROJECTS</div>

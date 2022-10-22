@@ -1,8 +1,15 @@
 import './project.scss'
 import {faMobilePhone,faTablet, faDesktop} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
+import { desktop } from '../../../../assets/img/export';
+
 
 const project = (props: any) =>{
+    // const arr = (param: string | number) => {
+    //     return [{}].filter((item: { [x: string]: any; }) => item[param])
+    // }
+
+
 
     return (
         <div className="project-container">
@@ -27,10 +34,11 @@ const project = (props: any) =>{
                             <div className="date sub"><span>Date - </span> 2020</div>
                             <div className="client sub"><span>Client - </span> xyz</div>
                             <div className="tools sub"><span>Tools - </span> React Sass</div>
-                            <div className="web sub"><span>Web - </span> www.domain.com</div>
+                            <div className="path sub"><span>Github - </span><a href='#'> Github.com </a></div>
                         </div>
                     </div>
                 </div>
+                <div className='divider'></div>
             </div>
             <div className='divider'></div>
             <div className="project-view">
@@ -43,7 +51,7 @@ const project = (props: any) =>{
                 </div>
                
                 <div className="img-container">
-                    <img src="" alt="" />
+                    <img src={desktop} alt="" />
                 </div>
             </div>
         </div>
