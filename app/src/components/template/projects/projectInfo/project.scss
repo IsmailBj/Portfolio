@@ -97,23 +97,26 @@
             flex-direction: row;
             .device-list{
                 display: flex;
-                width: 30%;
+                width: 40%;
                 margin: 20px;
                 flex-direction: row;
                 justify-content: space-around;
                 .device{
-                    width: 4rem;
+                    width: 5rem;
+                    height: 3rem;
                     background: $bg-color;
                     border-radius: 5px;
                     color: $color-dark;
                     border: 1px solid $color-dark;
-                    height: 3rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     align-content: center;
                     transition: all 0.3s ease;
                     cursor: pointer;
+                    svg{
+                        height: 1.6rem;
+                    }
                     &:hover{
                         color: $color-white;
                         border: 1px solid $color-white;

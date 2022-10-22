@@ -1,5 +1,5 @@
 import './project.scss'
-import {faBars,faDownload, faMobilePhone,faTablet, faDesktop} from "@fortawesome/free-solid-svg-icons";
+import {faMobilePhone,faTablet, faDesktop} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 
 const project = (props: any) =>{
@@ -43,7 +43,7 @@ const project = (props: any) =>{
                 </div>
                
                 <div className="img-container">
-
+                    <img src="" alt="" />
                 </div>
             </div>
         </div>
