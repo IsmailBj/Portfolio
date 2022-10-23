@@ -1,6 +1,6 @@
 import React from "react"
 import './projects.scss'
-import ImgProject from '../../../assets/projects/img-holder.png'
+import ImgProject from '../../../assets/img/img-holder.png'
 import userData from '../../../data/userData.json'
 
 const projects = (props: any) =>{

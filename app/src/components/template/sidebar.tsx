@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './sidebar.scss'
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
-import {faLinkedin, faGitlab, faGithub} from "@fortawesome/free-brands-svg-icons"
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
 import Avatar from '../../assets/img/userAvatar.png'
 import userData from '../../data/userData.json'

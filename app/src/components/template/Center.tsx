@@ -9,7 +9,6 @@ import Project from './projects/projectInfo/project'
 const Center = (props: any) =>{
 
     const [showProject, setShowProject] = useState(false)
-    console.log(showProject)
     return (
         !showProject ? (<>
             <div className="center-container">

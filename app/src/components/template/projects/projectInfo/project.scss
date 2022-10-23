@@ -42,6 +42,7 @@
             color: $color-white;
             .title{
                 font-size: 2rem;
+                margin: 15px 0px;
             }
             .category-container{
 
@@ -80,9 +81,10 @@
                 .sub-info{
                     font-size: 1.0rem;
                     .path{
-                        a{
+                        .url{
                             color: $color-dark;
                             text-decoration: none;
+                            cursor: pointer;
                             &:hover{
                                 color: $color-white;
                                 text-decoration: underline;
