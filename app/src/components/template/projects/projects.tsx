@@ -5,6 +5,8 @@ import userData from '../../../data/userData.json'
 
 const projects = (props: any) =>{
     const {projects} = userData
+    const {Bflow} = projects
+    
     return (
         <div className="projects-container">
             <div className="title">LATEST PROJECTS</div>
@@ -18,8 +20,8 @@ const projects = (props: any) =>{
             <div className="projects-list">
 
                 <div className="project-box" onClick={()=> props.setShowProject(true)}>
-                    <img src={ImgProject} alt="404" />
-                    <div className="pro-title">Comming soon</div>
+                    <img src={require(`../../../assets/img/projects/${Bflow.title}/${Bflow.title}-thumnail.png`)} alt="404" />
+                    <div className="pro-title"> {Bflow.title}</div>
                 </div>
                 <div className="project-box">
                     <img src={ImgProject} alt="404" />

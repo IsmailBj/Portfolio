@@ -66,7 +66,7 @@
         padding: 10px 10px;
 
         .info-location{
-            padding: 20px 40px;
+            padding: 20px 5%;
             color: $color-white;
             display: flex;
             flex-direction: column;
@@ -173,8 +173,6 @@
       
     }
 
-
-
     .mail-container{
         position: sticky;
         bottom: 0;
@@ -197,8 +195,6 @@
         }
     }
 }
-
-
 
 
 @keyframes progress1  {

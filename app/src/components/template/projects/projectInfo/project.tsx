@@ -5,6 +5,7 @@ import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome"
 import userData from '../../../../data/userData.json'
 import { openURL } from '../../../functions/openURL'
 import {displayimg} from '../../../functions/displayimg'
+import { nextImgfun } from '../../../functions/nextImg'
 import {faArrowLeft, faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 
@@ -13,6 +14,7 @@ const Project = (props: any) =>{
     const {projects} = userData
     const {Bflow} = projects
     const [deviceMode, setDeviceMode] = useState('desktop')
+    const [nextImg, setNextImg] = useState(0)
 
     return (
         <div className="project-container">
@@ -54,9 +56,9 @@ const Project = (props: any) =>{
                 </div>
                
                 <div className={`img-container ${deviceMode}`}>
-                    <div className='left'><FontAwesomeIcon icon={faArrowLeft}/></div>
-                    <img src={displayimg(Bflow.title,deviceMode,4)} alt="" />
-                    <div className='right'><FontAwesomeIcon icon={faArrowRight}/></div>
+                    <div className='left' onClick={()=>nextImgfun(setNextImg,"prev")}><FontAwesomeIcon icon={faArrowLeft}/></div>
+                    <img src={displayimg(Bflow.title,deviceMode,nextImg)} alt="" />
+                    <div className='right' onClick={()=>nextImgfun(setNextImg,"next")}><FontAwesomeIcon icon={faArrowRight}/></div>
                 </div>
             </div>
         </div>

@@ -15,11 +15,9 @@ const Sidebar = (props: any) =>{
         country,
         city,
         skills,
-        media,
         email
     } = userData
     
-    const {linkedIn,github,gitlab} = media
 
     function getAge() {
         let ageInMilliseconds:any = (new Date().getTime() - new Date('1999-11-28').getTime());
