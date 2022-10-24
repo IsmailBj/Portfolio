@@ -4,7 +4,7 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faCheckCircle, faTrophy, faStar, faLaptopCode} from "@fortawesome/free-solid-svg-icons";
 import Avatar from '../../assets/img/userAvatar.png'
 import userData from '../../data/userData.json'
-
+import { Mailto } from '../functions/sendMail';
 
 const Sidebar = (props: any) =>{
 
@@ -87,8 +87,7 @@ const Sidebar = (props: any) =>{
         
                 </div>
         </div>
-           
-            <div className="mail-container"><span className='g-mail'>{email}</span></div>
+            <div className="mail-container"><Mailto email={email}/></div>
     </div>
     )
 }
