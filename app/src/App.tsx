@@ -9,9 +9,16 @@ import { debounce } from './components/functions/debounce';
 function App() {
 
   const [isMenu, setIsMenu] = useState(false)
-  const [deviceView, setDeviceView] = useState('default')
+  const [deviceView, setDeviceView] = useState('')
+  const [loading, setLoading] = useState(true)
 
-
+  useEffect(()=>{
+    CheckDeviceMode(setDeviceView)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000);
+  },[])
+  
   useEffect(()=>{
     const debouncedHandleResize = debounce(()=>CheckDeviceMode(setDeviceView),500)
 
@@ -21,16 +28,29 @@ function App() {
   },[deviceView])
 
   return (
-    <div className={`main-container ${isMenu ? "expendMenu" : ""} ${deviceView}`}>
+    loading ? (
+    <>
+      <div className="ring">Loading
+        <span className='loadBar'></span>
+      </div>
+    </>) : (
+    <>
+       <div className={`main-container ${isMenu ? "expendMenu" : ""} ${deviceView}`}>
         <Sidebar
+          deviceView={deviceView}
         />
-        <Center/>
+        <Center
+          deviceView={deviceView}     
+        />
         <Header
           isMenu={isMenu}
+          deviceView={deviceView}
           setIsMenu={setIsMenu}
         />
     </div>
-  );
+    </>)
+ 
+  )
 }
 
 export default App;

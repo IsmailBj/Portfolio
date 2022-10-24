@@ -1,13 +1,14 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import './sidebar.scss'
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
-import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
+import {faCheckCircle, faTrophy, faStar, faLaptopCode} from "@fortawesome/free-solid-svg-icons";
 import Avatar from '../../assets/img/userAvatar.png'
 import userData from '../../data/userData.json'
 
 
 const Sidebar = (props: any) =>{
+
+    const {deviceView} = props
 
     const {
         name,
@@ -15,7 +16,8 @@ const Sidebar = (props: any) =>{
         country,
         city,
         skills,
-        email
+        email,
+        topSkills
     } = userData
     
 
@@ -66,34 +68,20 @@ const Sidebar = (props: any) =>{
                 </div>
                 <div className='divider'></div>
                 <div className="skills-container">
-                    <div className="hard-skills-container">
-                        <div className="skill-info">React<span>90%</span></div>
-                        <div className='skillbar'>
-                            <div className="progress react"></div>
-                        </div>
+                    <div className="top-skills-container">
+                        <div className='top-skill-title'><FontAwesomeIcon icon={faTrophy}/>Top Experince </div>
+                        {topSkills.map((skill:string , index: number)=>{
+                           return  <span className={'top-skills ' + skill} key={index}>{skill} <FontAwesomeIcon icon={faStar}/></span>
+                        })}
+                        
                     </div>
-                    <div className="hard-skills-container">
-                        <div className="skill-info">Angular<span>70%</span></div>
-                        <div className='skillbar'>
-                            <div className="progress angular"></div>
-                        </div>
-                    </div>
-                    <div className="hard-skills-container">
-                        <div className="skill-info">Node.js<span>50%</span></div>
-                        <div className='skillbar'>
-                            <div className="progress node"></div>
-                        </div>
-                    </div>
-                    <div className="hard-skills-container">
-                        <div className="skill-info">Sass<span>80%</span></div>
-                        <div className='skillbar'>
-                            <div className="progress sass"></div>
-                        </div>
-                    </div>
+                   
+                    
                     <div className='divider'></div>
-                    <div className="soft-skills-container">
-                        {skills.map((skill: any, index: any)=>{
-                            return  <div className={'soft-skill ' + skill} key={index}><FontAwesomeIcon icon={faCheckCircle}/><span>{skill}</span></div>
+                    <div className="other-skills-container">
+                        <div className='other-skill-title'><FontAwesomeIcon icon={faLaptopCode}/>Other Skills</div>
+                        {skills.map((skill: string, index: number)=>{
+                            return  <div className={'other-skill ' + skill} key={index}><FontAwesomeIcon icon={faCheckCircle}/><span>{skill}</span></div>
                         })}
                     </div>
         

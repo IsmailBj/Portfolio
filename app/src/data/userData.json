@@ -3,6 +3,7 @@
     "surname": "Bajrami",
     "country": "North Macedonia",
     "city": "Skopje",
+    "topSkills": ["Angular","React","Typescript","Node.js"],
     "skills": ["Git Gitlab/Github","MongoDB","PostgreSQL","Firebase","Pandas","Pycharm"],
     "media": {
         "linkedIn": {

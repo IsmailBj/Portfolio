@@ -73,3 +73,18 @@
     }
 }
 
+.main-container.laptop{
+    .center-container{
+        padding: 0;
+        .projects{
+            .projects-container{
+                .projects-list{
+                    .project-box{
+                        width: calc(50% - 40px);
+                    }
+                }
+            }
+        }
+        
+    }
+}
