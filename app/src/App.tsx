@@ -35,18 +35,17 @@ function App() {
     </>) : (
     <>
        <div className={`main-container ${isMenu ? "expendMenu" : ""} ${deviceView}`}>
-        <Sidebar
-          deviceView={deviceView}
-        />
-        <Center
-          deviceView={deviceView}     
-        />
-        <Header
-          isMenu={isMenu}
-          deviceView={deviceView}
-          setIsMenu={setIsMenu}
-        />
-    </div>
+              {(deviceView === "tablet" || deviceView === "mobile") && (<></>)} 
+              {(deviceView === "laptop" || deviceView === "desktop") && (<Sidebar deviceView={deviceView}/>)} 
+              <Center deviceView={deviceView}/>
+              {(deviceView === "laptop" || deviceView === "desktop") && (
+                  <Header
+                  isMenu={isMenu}
+                  deviceView={deviceView}
+                  setIsMenu={setIsMenu}
+                />
+              )} 
+      </div>
     </>)
  
   )

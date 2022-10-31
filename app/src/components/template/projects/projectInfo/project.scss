@@ -212,3 +212,14 @@
 
 
 
+.main-container.tablet,.main-container.mobile{
+    .project-container{
+        width: calc(100% - 20px);
+    }
+}
+
+.main-container.mobile{
+    .project-container{
+        margin: 0;
+    }
+}

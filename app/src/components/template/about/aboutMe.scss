@@ -1,7 +1,6 @@
 @import  "../../../variables.scss";
 
 .about-container {
-   
     padding: 20px;
     background: url('../../../assets//img//Mountains.jpg');
     background-color: $bg-color;
@@ -46,4 +45,20 @@
         }
     }
     
+}
+
+.main-container.laptop{
+    .center-container{
+        .banner-top{
+           .about-container{
+            .blur-cover{
+                .text-left{
+                    .about-text{
+                        font-size: 1.3em;
+                    }
+                }
+            }
+           } 
+        }
+    }
 }

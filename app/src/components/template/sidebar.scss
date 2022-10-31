@@ -200,11 +200,12 @@
 
 .main-container.laptop{
     .sidebar-container{
-        width: 25%;
         .info-contianer{
-            padding: 20px 2%;
-            font-size: 15px;
+            .info-location{
+                padding: 20px 0%;
+                font-size: 15px;
+            }
         }
-
     }
+
 }

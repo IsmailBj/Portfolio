@@ -1,8 +1,16 @@
 @import  "../../variables.scss";
 
-.center-container{
-    background-color: $bg-color;
-    width: 80%;
-    padding: 20px;
+
+.main-container{
     overflow-y: auto;
 }
+
+.main-container.desktop{
+    .center-container{
+        background-color: $bg-color;
+        width: 80%;
+        padding: 20px;
+        overflow-y: auto;
+    }
+}
+
