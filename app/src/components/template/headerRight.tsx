@@ -9,7 +9,7 @@ const Header = (props: any, ref: any) =>{
     const {setIsMenu, isMenu} = props
 
     return (
-        <div className={`header-container ${isMenu ? "expend" : ""}`}>
+        <div className={`header-container`}>
             <div className="hamburger-menu" onClick={()=>setIsMenu(!isMenu)}>
                 <FontAwesomeIcon icon={faBars}/>
             </div>

@@ -103,7 +103,7 @@
     }
     .project-view{
         width: 100%;
-
+        user-select: none;
         .device-container{
             width: 100%;
             display: flex;

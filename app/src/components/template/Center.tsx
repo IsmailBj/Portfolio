@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import  {useState} from "react";
 import "./Center.scss"
 import AboutMe from './about/aboutMe'
 import Experience from './experience/experience'
@@ -9,6 +9,7 @@ import Project from './projects/projectInfo/project'
 const Center = (props: any) =>{
 
     const [showProject, setShowProject] = useState(false)
+    
     return (
         !showProject ? (<>
             <div className="center-container">

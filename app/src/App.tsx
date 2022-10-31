@@ -1,10 +1,11 @@
-import React ,{useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import './App.scss';
 import Sidebar from './components/template/sidebar'
 import Center from './components/template/Center'
 import Header from './components/template/headerRight'
 import { CheckDeviceMode } from './components/functions/CheckDeviceMode';
 import { debounce } from './components/functions/debounce';
+import LoadingPage from './components/template/loaderEffect/loadingPage';
 
 function App() {
 
@@ -30,9 +31,7 @@ function App() {
   return (
     loading ? (
     <>
-      <div className="ring">Loading
-        <span className='loadBar'></span>
-      </div>
+      <LoadingPage/>
     </>) : (
     <>
        <div className={`main-container ${isMenu ? "expendMenu" : ""} ${deviceView}`}>

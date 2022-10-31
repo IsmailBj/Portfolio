@@ -104,11 +104,13 @@
     }
 
 }
-
-.header-container.expend {
-    .nav-list{
-        transform: rotate(0deg);
-        padding: 5% 0px;
-    } 
-
+.main-container.expendMenu{
+    .header-container {
+        .nav-list{
+            transform: rotate(0deg);
+            padding: 5% 0px;
+        } 
+    
+    }
 }
+
