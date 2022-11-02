@@ -67,7 +67,7 @@
 
 }
 
-.main-container.laptop{
+.main-container.laptop, .main-container.tablet{
     .center-container{
         .experience{
             .exp-contianer{
@@ -79,4 +79,19 @@
         
     }
 }
+
+.main-container.mobile{
+    .center-container{
+        .experience{
+            .exp-contianer{
+                .experience{
+                    width: 90%;
+                }
+            }
+        }
+        
+    }
+}
+
+
 

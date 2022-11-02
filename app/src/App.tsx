@@ -1,15 +1,17 @@
 import {useState, useEffect} from 'react';
 import './App.scss';
-import Sidebar from './components/template/sidebar'
+import Profile from './components/template/Profile/sidebar'
 import Center from './components/template/Center'
-import Header from './components/template/headerRight'
+import Header from './components/template/header/headerRight'
 import { CheckDeviceMode } from './components/functions/CheckDeviceMode';
 import { debounce } from './components/functions/debounce';
 import LoadingPage from './components/template/loaderEffect/loadingPage';
+import MobHeader from './components/template/mobile/mobileHeader'
 
 function App() {
 
   const [isMenu, setIsMenu] = useState(false)
+  const [isProfile, setIsProfile] = useState(false)
   const [deviceView, setDeviceView] = useState('')
   const [loading, setLoading] = useState(true)
 
@@ -19,6 +21,7 @@ function App() {
       setLoading(false)
     }, 2000);
   },[])
+
   
   useEffect(()=>{
     const debouncedHandleResize = debounce(()=>CheckDeviceMode(setDeviceView),500)
@@ -35,16 +38,24 @@ function App() {
     </>) : (
     <>
        <div className={`main-container ${isMenu ? "expendMenu" : ""} ${deviceView}`}>
-              {(deviceView === "tablet" || deviceView === "mobile") && (<></>)} 
-              {(deviceView === "laptop" || deviceView === "desktop") && (<Sidebar deviceView={deviceView}/>)} 
-              <Center deviceView={deviceView}/>
-              {(deviceView === "laptop" || deviceView === "desktop") && (
+              {(deviceView === "tablet" || deviceView === "mobile") && (
+              <MobHeader 
+                isMenu={isMenu}
+                isProfile={isProfile}
+                setIsMenu={setIsMenu} 
+                setIsProfile={setIsProfile}
+              />)} 
+              <Profile
+                 isProfile={isProfile}
+                 setIsProfile={setIsProfile}
+                 deviceView={deviceView}
+              />
+              <Center/>
                   <Header
-                  isMenu={isMenu}
-                  deviceView={deviceView}
-                  setIsMenu={setIsMenu}
+                    isMenu={isMenu}
+                    setIsMenu={setIsMenu}
                 />
-              )} 
+ 
       </div>
     </>)
  

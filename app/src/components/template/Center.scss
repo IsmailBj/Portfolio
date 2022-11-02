@@ -5,7 +5,7 @@
     overflow-y: auto;
 }
 
-.main-container.desktop{
+.main-container.desktop,.main-container.laptop{
     .center-container{
         background-color: $bg-color;
         width: 80%;

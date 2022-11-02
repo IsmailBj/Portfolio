@@ -1,14 +1,12 @@
 import './sidebar.scss'
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
-import {faCheckCircle, faTrophy, faStar, faLaptopCode} from "@fortawesome/free-solid-svg-icons";
-import Avatar from '../../assets/img/userAvatar.png'
-import userData from '../../data/userData.json'
-import { Mailto } from '../functions/sendMail';
+import {faCheckCircle, faTrophy, faStar, faLaptopCode,faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import Avatar from '../../../assets/img/userAvatar.png'
+import userData from '../../../data/userData.json'
+import { Mailto } from '../../functions/sendMail';
 
 const Sidebar = (props: any) =>{
-
-    const {deviceView} = props
 
     const {
         name,
@@ -20,6 +18,7 @@ const Sidebar = (props: any) =>{
         topSkills
     } = userData
     
+    const {isProfile,setIsProfile} = props
 
     function getAge() {
         let ageInMilliseconds:any = (new Date().getTime() - new Date('1999-11-28').getTime());
@@ -28,8 +27,11 @@ const Sidebar = (props: any) =>{
 
 
     return (
-    <div className="sidebar-container">
+    <div className={`sidebar-container ${isProfile ? "active" : ""}`}>
         <div className="avatar-container">
+            {isProfile && (<> <div className="close-profile" onClick={()=>setIsProfile(!isProfile)}>
+                <FontAwesomeIcon icon={faArrowLeft}/>    
+            </div></>)}
             <div className="avatar">
                <img src={Avatar} alt="" />
             </div>

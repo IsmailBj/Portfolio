@@ -69,12 +69,25 @@
     
 }
 
-.main-container.laptop{
+.main-container.laptop,.main-container.tablet{
     .center-container{
         .education{
             .edu-contianer{
                 .education{
                     width: 65%;
+                }
+            }
+        }
+        
+    }
+}
+
+.main-container.mobile{
+    .center-container{
+        .education{
+            .edu-contianer{
+                .education{
+                    width: 90%;
                 }
             }
         }

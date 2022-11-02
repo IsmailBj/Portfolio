@@ -1,0 +1,38 @@
+@import  "../../../variables.scss";
+
+.headerMob-container{
+    margin: 10px 5px;
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: $bg-color;
+
+    .profile-toggle{
+        svg{
+            color: $color-dark;;
+            cursor: pointer;
+            transition: 0.55s linear;
+            width: 40px;
+            height: 40px;
+            &:hover{
+                color: $color-white;
+            }
+        }
+    }
+
+    .navication-toggle{
+        svg{
+            color: $color-dark;;
+            cursor: pointer;
+            transition: 0.55s linear;
+            width: 40px;
+            height: 40px;
+            &:hover{
+                color: $color-white;
+            }
+        }
+    }
+
+}

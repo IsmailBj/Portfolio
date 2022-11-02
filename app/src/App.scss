@@ -24,3 +24,9 @@ body{
 
   }
 }
+
+
+.main-container.tablet,.main-container.mobile{
+  display: flex;
+  flex-direction: column;
+}

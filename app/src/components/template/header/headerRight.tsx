@@ -2,9 +2,9 @@ import React from "react";
 import "./headerRight.scss"
 import {faBars,faDownload} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
-import {scrollCenter} from "../functions/scrollPosition"
+import {scrollCenter} from "../../functions/scrollPosition"
 
-const Header = (props: any, ref: any) =>{
+const Header = (props: any) =>{
 
     const {setIsMenu, isMenu} = props
 
