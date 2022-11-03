@@ -1,4 +1,4 @@
-@import  "../../../variables.scss";
+@import "../../../variables.scss";
 
 
 .projects-container {
@@ -9,11 +9,13 @@
     flex-direction: column;
     background: linear-gradient(159deg, rgba(37, 37, 50, 0.9803921569) 0%, rgba(35, 35, 45, 0.9803921569) 100%);
     margin: 20px;
-    .title{
+
+    .title {
         color: $color-white;
         font-size: 1.8em;
     }
-    .project-filter{
+
+    .project-filter {
         width: 80%;
         text-align: center;
         margin: 20px 0;
@@ -24,18 +26,20 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        .ctg{
+        .ctg {
             padding: 0 20px;
             color: $color-dark;
             white-space: nowrap;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 color: $color-white;
             }
         }
-      
+
     }
-    .projects-list{
+
+    .projects-list {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -45,13 +49,15 @@
         height: auto;
         padding: 50px 0;
         gap: 20px;
-        .project-box{
+
+        .project-box {
             width: calc(30% - 40px);
             height: 250px;
             background-color: $bg-color;
             padding: 15px;
             border-radius: 5px;
             cursor: pointer;
+
             img {
                 position: relative;
                 width: 100%;
@@ -61,7 +67,8 @@
                 bottom: 0;
                 transition: 0.25s ease-out;
             }
-            .pro-title{
+
+            .pro-title {
                 color: $color-white;
                 height: calc(100% - 200px);
                 width: 100%;
@@ -70,8 +77,8 @@
                 align-items: center;
             }
 
-            &:hover{
-                img{
+            &:hover {
+                img {
                     bottom: 14%;
                 }
             }
@@ -79,50 +86,58 @@
     }
 }
 
-.main-container.tablet{
-    .center-container{
+.main-container.tablet {
+    .center-container {
         padding: 0;
-        .projects{
-            .projects-container{
-                .projects-list{
-                    .project-box{
+
+        .projects {
+            .projects-container {
+                .projects-list {
+                    .project-box {
                         width: calc(50% - 40px);
                     }
                 }
             }
         }
-        
+
     }
 }
 
-.main-container.laptop{
-    .center-container{
+.main-container.laptop {
+    .center-container {
         padding: 0;
-        .projects{
-            .projects-container{
-                .projects-list{
-                    .project-box{
+
+        .projects {
+            .projects-container {
+                .projects-list {
+                    .project-box {
                         width: calc(50% - 40px);
                     }
                 }
             }
         }
-        
+
     }
 }
 
-.main-container.mobile{
-    .center-container{
+.main-container.mobile {
+    .center-container {
         padding: 0;
-        .projects{
-            .projects-container{
-                .project-filter{
+
+        .projects {
+            .projects-container {
+                .project-filter {
                     flex-direction: column;
 
                 }
+
+                .projects-list {
+                    .project-box {
+                        width: calc(100% - 20px);
+                    }
+                }
             }
         }
-        
+
     }
 }
-
