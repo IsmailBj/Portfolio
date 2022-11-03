@@ -43,6 +43,9 @@
                 line-height: 1.2;
             }
         }
+        .explore{
+            display: none;
+        }
     }
     
 }
@@ -56,6 +59,42 @@
                     .about-text{
                         font-size: 1.3em;
                     }
+                }
+            }
+           } 
+        }
+    }
+}
+
+
+.main-container.mobile{
+    .center-container{
+        .banner-top{
+           .about-container{
+            .blur-cover{
+                flex-direction: column;
+                justify-content: center;
+                .text-left{
+                    display: none;
+
+                }
+                .text-right{
+                    width: 90%;
+                    padding-left: 0em;
+                }
+                .bar{
+                    height: 3px;
+                    width: 70%;
+                }
+                .explore{
+                    display: block;
+                    width: fit-content;
+                    background-color: $color-gold;
+                    color: black;
+                    padding: 10px 20px;
+                    position: relative;
+                    font-size: 1.6em;
+                    // top: 1em;
                 }
             }
            } 

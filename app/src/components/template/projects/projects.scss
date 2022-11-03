@@ -17,11 +17,17 @@
         width: 80%;
         text-align: center;
         margin: 20px 0;
+        display: flex;
+        gap: 20px 20px;
         font-size: 1.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .ctg{
             padding: 0 20px;
             color: $color-dark;
+            white-space: nowrap;
             cursor: pointer;
             &:hover{
                 color: $color-white;
@@ -98,6 +104,21 @@
                     .project-box{
                         width: calc(50% - 40px);
                     }
+                }
+            }
+        }
+        
+    }
+}
+
+.main-container.mobile{
+    .center-container{
+        padding: 0;
+        .projects{
+            .projects-container{
+                .project-filter{
+                    flex-direction: column;
+
                 }
             }
         }

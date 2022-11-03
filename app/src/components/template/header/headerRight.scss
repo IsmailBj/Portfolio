@@ -114,7 +114,7 @@
     }
 }
 
-.main-container.expendMenu.tablet,.main-container.expendMenu.mobile{
+.main-container.expendMenu.tablet{
     .header-container {
         width: 35%;
         .nav-list{
@@ -124,6 +124,18 @@
     
     }
 }
+
+.main-container.expendMenu.mobile{
+    .header-container {
+        width: 100%;
+        .nav-list{
+            transform: rotate(0deg);
+            padding: 5% 0px;
+        } 
+    
+    }
+}
+
 
 .main-container.tablet,.main-container.mobile{
     .header-container {
