@@ -9,6 +9,7 @@ import { Navigation, Pagination } from 'swiper';
 import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
 import 'swiper/scss'
+import { type } from 'os'
 
 const Project = (props: any) =>{
 
@@ -59,11 +60,14 @@ const Project = (props: any) =>{
                    <Swiper
                         modules={[Navigation, Pagination]}
                         navigation
-                        pagination
+                        pagination={{
+                            type:"bullets"
+                        }}
                         centeredSlides={true}
                         centeredSlidesBounds={true}
                         slidesPerView={1}
                         spaceBetween={100}
+                    
                         
                    >
                     <div className='moveceter'>

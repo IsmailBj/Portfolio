@@ -283,3 +283,19 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: 25px;
+    border-radius: 20px;
+    height: 10px;
+
+}
+.swiper.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: unset;
+    top: 0;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active{
+    background: $color-dark;
+}
