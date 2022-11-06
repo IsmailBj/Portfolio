@@ -54,6 +54,7 @@ function App() {
                   <Header
                     isMenu={isMenu}
                     setIsMenu={setIsMenu}
+                    deviceView={deviceView}
                 />
  
       </div>

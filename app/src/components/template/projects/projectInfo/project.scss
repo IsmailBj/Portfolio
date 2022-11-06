@@ -210,8 +210,6 @@
     }
 }
 
-
-
 .main-container.tablet{
     .project-container{
         width: calc(100% - 80px);
@@ -219,8 +217,69 @@
 }
 
 .main-container.mobile{
+    .swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        display: none;
+    }
     .project-container{
         margin: 0;
         width: calc(100% - 40px);
+        .info-container{
+            .project-info{
+                flex-direction: column-reverse;
+                .project-info-details{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .project-view{
+            .device-container{
+                .device-list{
+                    width: 100%;
+                }
+            }
+
+            .img-container.desktop {
+                img{
+                    width: calc(100% - 10px);
+                    height: calc(100% - 250px);
+                    padding: 20px;
+                    background-color: $bg-color;
+                    border-radius: 20px;
+                }
+            }
+            .img-container.tablet {
+                img{
+                    width: calc(100% - 10px);
+                    height: calc(100% - 250px);
+                    padding: 20px;
+                    background-color: $bg-color;
+                    border-radius: 20px;
+                }
+            }
+            .img-container.mobile {
+                img{
+                    width: calc(100% - 60px);
+                    height: calc(100% - 250px);
+                    padding: 20px;
+                    background-color: $bg-color;
+                    border-radius: 20px;
+                }
+            }
+        }
     }
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    right: 10px;
+    left: auto;
+    background: #00000040;
+    padding: 20px 30px;
+
+    border-radius: 30px;
+}
+.swiper-backface-hidden .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -4,18 +4,18 @@ import {faMobilePhone,faTablet, faDesktop} from "@fortawesome/free-solid-svg-ico
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome"
 import userData from '../../../../data/userData.json'
 import { openURL } from '../../../functions/openURL'
-import {displayimg} from '../../../functions/displayimg'
-import { nextImgfun } from '../../../functions/nextImg'
-import {faArrowLeft, faArrowRight} from "@fortawesome/free-solid-svg-icons";
-
-
+import { Swiper, SwiperSlide} from 'swiper/react';
+import { Navigation, Pagination } from 'swiper';
+import 'swiper/scss/pagination';
+import 'swiper/scss/navigation';
+import 'swiper/scss'
 
 const Project = (props: any) =>{
+
+
     const {projects} = userData
     const {Bflow} = projects
     const [deviceMode, setDeviceMode] = useState('desktop')
-    const [nextImg, setNextImg] = useState(0)
-
     return (
         <div className="project-container">
             <div className="info-container">
@@ -56,9 +56,23 @@ const Project = (props: any) =>{
                 </div>
                
                 <div className={`img-container ${deviceMode}`}>
-                    <div className='left' onClick={()=>nextImgfun(setNextImg,"prev")}><FontAwesomeIcon icon={faArrowLeft}/></div>
-                    <img src={displayimg(Bflow.title,deviceMode,nextImg)} alt="" />
-                    <div className='right' onClick={()=>nextImgfun(setNextImg,"next")}><FontAwesomeIcon icon={faArrowRight}/></div>
+                   <Swiper
+                        modules={[Navigation, Pagination]}
+                        navigation
+                        pagination
+                        centeredSlides={true}
+                        centeredSlidesBounds={true}
+                        slidesPerView={1}
+                        spaceBetween={100}
+                        
+                   >
+                    <div className='moveceter'>
+                        {Bflow.layout[deviceMode as keyof typeof Bflow.layout].map((image:string, key:number)=>{
+                            return  <SwiperSlide key={key}><img src={require(`../../../../assets/img/projects/${Bflow.title}/${deviceMode}/${image}`)} alt="" /> </SwiperSlide>
+                        })}
+                    </div>
+                   </Swiper>
+                
                 </div>
             </div>
         </div>
