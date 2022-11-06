@@ -20,6 +20,22 @@
         }
     },
 
+    "experience": {
+        "work-title": "Front-End Developer",
+        "company": "KeepITSimbple",
+        "start-date": "Aug,01,2021",
+        "end-date": "Present",
+        "location": "North Macedonia",
+        "city": "Skopje",
+        "about-skills": [
+        "Responsible for designing and implementing UI components for web applications with the use of open-source library",
+        "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
+        "Developing Applications with React and maintaining",
+        "Using Figma for ease high-quality designs and Planning",
+        "Designing banners and making GIFs for advertising"
+        ]
+    },
+
     "email": "Ismo.bjr@gmail.com",
 
     "projects" : {
