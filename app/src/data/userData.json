@@ -19,22 +19,70 @@
             "name": "Gitlab"
         }
     },
+    "experience": [
+        {
+            "work-title": "Front-End Developer",
+            "company": "KeepITSimbple",
+            "start-date": "Aug,01,2021",
+            "end-date": "Present",
+            "location": "North Macedonia",
+            "city": "Skopje",
+            "about-skills": [
+            "Responsible for designing and implementing UI components for web applications with the use of open-source library",
+            "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
+            "Developing Applications with React and maintaining",
+            "Using Figma for ease high-quality designs and Planning",
+            "Designing banners and making GIFs for advertising"
+            ]
+        },
+        {
+            "work-title": "Front-End Indernship",
+            "company": "Seavus",
+            "start-date": "Nov,01,2021",
+            "end-date": "Nov,01,2022",
+            "location": "North Macedonia",
+            "city": "Skopje",
+            "about-skills": [
+            "Responsible for designing and implementing UI components for web applications with the use of open-source library",
+            "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
+            "Developing Applications with React and maintaining",
+            "Using Figma for ease high-quality designs and Planning",
+            "Designing banners and making GIFs for advertising"
+            ]
+        }
+    ],
+    
+    "education":[
+        {
+            "university-name": "IU International University of Applied Sciences",
+            "graduate-title": "Bachelor's degree, Computer Science",
+            "start-date": "Aug,01,2021",
+            "end-date": "Nov,01,2024",
+            "location": "Germany",
+            "city": "Erfurt",
+            "about-skills": [
+                "IU International University of Applied Sciences is a private, state-recognized University of Applied Sciences based in Erfurt",
+                "Java and spring boot advanced knowledgement and Object oriented programing (OOP)",
+                "Big data analytics with Python that process trends of uncovering, patterns, and correlations in large amounts of raw data to help make data-informed decisions."
+            ]
+        },
+        {
+            "university-name": "Seavus Education & Development Center",
+            "graduate-title": "Programming Academy",
+            "start-date": "Nov,11,2020",
+            "end-date": "Nov,11,2021",
+            "location": "North Macedonia",
+            "city": "Skopje",
+            "about-skills": [
+                "Working with ASP.NET Web Development Frameworks for back-end development ",
+                "Working with MVC (Model View Controller) and other MV* familiar patterns (MVVM, MVP)",
+                "Working with relational and non-relational database management systems (Microsoft SQL, MongoDB)",
+                "Understanding the IaaS, PaaS and SaaS principles of the cloud-computing paradigm"
+            ]
+        }
+    ],
 
-    "experience": {
-        "work-title": "Front-End Developer",
-        "company": "KeepITSimbple",
-        "start-date": "Aug,01,2021",
-        "end-date": "Present",
-        "location": "North Macedonia",
-        "city": "Skopje",
-        "about-skills": [
-        "Responsible for designing and implementing UI components for web applications with the use of open-source library",
-        "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
-        "Developing Applications with React and maintaining",
-        "Using Figma for ease high-quality designs and Planning",
-        "Designing banners and making GIFs for advertising"
-        ]
-    },
+   
 
     "email": "Ismo.bjr@gmail.com",
 

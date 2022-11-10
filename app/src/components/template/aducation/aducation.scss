@@ -8,7 +8,7 @@
     flex-direction: column;
     background: $linear-bg;
     margin: 20px;
-    .title-exp{
+    .title-edu{
         width: 200px;
         background: $linear-bg;
         border: 1px solid $color-dark;
@@ -32,39 +32,45 @@
         border-radius: 20px;
     }
 
-    .education{
-        color: $color-white;
-        position: relative;
-        background: $linear-bg;
-        border: 1px solid $color-dark;
-        box-shadow: 4px 4px 4px 0 $shadow;
-        width: 40%;
-        padding: 20px;
-        .edu-info{
-            .date{
-                float: right;
-                color: $color-dark;
-            }
-            .work-title{
-                font-size: 2rem;
-                
-            }
-            .location{
-                color: $color-dark;
-                padding: 5px 0;
-                .company{
-                    font-size: bold;
-                    font-size: 1.2rem;
+    .education-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .education{
+            color: $color-white;
+            position: relative;
+            background: $linear-bg;
+            border: 1px solid $color-dark;
+            box-shadow: 4px 4px 4px 0 $shadow;
+            width: 30vw;
+            padding: 20px;
+            .edu-info{
+                .date{
+                    float: right;
+                    color: $color-dark;
                 }
+                .edu-title{
+                    font-size: 1.5rem;
+                    
+                }
+                .location{
+                    color: $color-dark;
+                    padding: 5px 0;
+                    .company{
+                        font-size: bold;
+                        font-size: 1.2rem;
+                    }
+                }
+                .uni-info{
+                    width: calc(100% - 40px);
+                    line-height: 20px;
+                    font-size: 16px;
+                }
+    
             }
-            .work-info{
-                width: calc(100% - 40px);
-                line-height: 20px;
-                font-size: 16px;
-            }
-
         }
     }
+
 
     
 }
