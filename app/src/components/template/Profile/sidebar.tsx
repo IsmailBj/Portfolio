@@ -5,7 +5,7 @@ import {faCheckCircle, faTrophy, faStar, faLaptopCode,faArrowLeft} from "@fortaw
 import Avatar from '../../../assets/img/userAvatar.png'
 import userData from '../../../data/userData.json'
 import { Mailto } from '../../functions/sendMail';
-
+import { openURL } from '../../functions/openURL';
 const Sidebar = (props: any) =>{
 
     const {
@@ -15,7 +15,8 @@ const Sidebar = (props: any) =>{
         city,
         skills,
         email,
-        topSkills
+        topSkills,
+        media
     } = userData
     
     const {isProfile,setIsProfile} = props
@@ -36,10 +37,10 @@ const Sidebar = (props: any) =>{
                <img src={Avatar} alt="" />
             </div>
             <div className='info-user'>
-                <span className='name-surname'>{name} {surname} 
-                <span className='linkedIn'>
-                    <FontAwesomeIcon icon={faLinkedin}/>
-                </span>
+                <span className='name-surname' onClick={()=>openURL(media.linkedIn.url,'_blank')}>{name} {surname} 
+                    <span className='linkedIn'>
+                        <FontAwesomeIcon icon={faLinkedin}/>
+                    </span>
                 </span>
                 <span className="work-title">Front-End Developer</span>
             </div>

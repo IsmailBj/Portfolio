@@ -92,7 +92,7 @@
             "categori": "web-app",
             "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, deleniti voluptate? Inventore nisi id tenetur ad. Veniam necessitatibus ut odio, sequi quis architecto suscipit qui voluptates repudiandae, rerum sapiente illum.",
             "date": "2020",
-            "tools": ["React","Sass"],
+            "tools": ["React","Tailwind"],
             "github": "https://github.com/IsmailBj/BFlow",
             "layout": {
                 "desktop": ["desktop-one.png","desktop-two.png","desktop-three.png"],
