@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.307e5138.css",
+    "main.js": "/Portfolio/static/js/main.dd435bda.js",
+    "static/media/Mountains.jpg": "/Portfolio/static/media/Mountains.fa112deda135cc53f9ad.jpg",
+    "static/media/desktop-two.png": "/Portfolio/static/media/desktop-two.b1471bc04fa2e533918b.png",
+    "static/media/desktop-one.png": "/Portfolio/static/media/desktop-one.9f320aa4038daa765c5e.png",
+    "static/media/desktop-three.png": "/Portfolio/static/media/desktop-three.87c5d80d97e872f8d98b.png",
+    "static/media/tablet-two.png": "/Portfolio/static/media/tablet-two.6b4497ead31786e1d209.png",
+    "static/media/tablet-one.png": "/Portfolio/static/media/tablet-one.4fa55504397b18fc4b82.png",
+    "static/media/mobile-one.png": "/Portfolio/static/media/mobile-one.6352144fe95cd72f4450.png",
+    "static/media/tablet-three.png": "/Portfolio/static/media/tablet-three.fea821cc207bbafb5fd7.png",
+    "static/media/mobile-three.png": "/Portfolio/static/media/mobile-three.d16d888f89ccfdce5f65.png",
+    "static/media/mobile-two.png": "/Portfolio/static/media/mobile-two.32828393a57044ee64bc.png",
+    "static/media/userAvatar.png": "/Portfolio/static/media/userAvatar.9df4076ed5dc19043fea.png",
+    "static/media/desktop.png": "/Portfolio/static/media/desktop.e9e3b72fde060e8b0731.png",
+    "static/media/tablet.png": "/Portfolio/static/media/tablet.28c358fa32354b793ae5.png",
+    "static/media/phone.png": "/Portfolio/static/media/phone.9ffdee452bfc665f67bf.png",
+    "index.html": "/Portfolio/index.html",
+    "main.307e5138.css.map": "/Portfolio/static/css/main.307e5138.css.map",
+    "main.dd435bda.js.map": "/Portfolio/static/js/main.dd435bda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.307e5138.css",
+    "static/js/main.dd435bda.js"
+  ]
+}
