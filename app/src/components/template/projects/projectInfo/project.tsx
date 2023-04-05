@@ -9,7 +9,6 @@ import { Navigation, Pagination } from 'swiper';
 import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
 import 'swiper/scss'
-import { type } from 'os'
 
 const Project = (props: any) =>{
 

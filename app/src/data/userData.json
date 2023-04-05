@@ -3,12 +3,25 @@
     "surname": "Bajrami",
     "country": "North Macedonia",
     "city": "Skopje",
-    "topSkills": ["Angular","React","Typescript","Node.js"],
-    "skills": ["Git Gitlab/Github","MongoDB","PostgreSQL","Firebase","Pandas","Pycharm"],
+    "email": "Ismo.bjr@gmail.com",
+    "topSkills": [
+        "Angular",
+        "React",
+        "Typescript",
+        "Node.js"
+    ],
+    "skills": [
+        "Git Gitlab/Github",
+        "MongoDB",
+        "PostgreSQL",
+        "Firebase",
+        "Pandas",
+        "Pycharm"
+    ],
     "media": {
         "linkedIn": {
             "url": "https://www.linkedin.com/in/ismail-bajrami-b8aa82193/",
-            "name":  "LinkedIn"
+            "name": "LinkedIn"
         },
         "github": {
             "url": "https://github.com/IsmailBj",
@@ -28,11 +41,11 @@
             "location": "North Macedonia",
             "city": "Skopje",
             "about-skills": [
-            "Responsible for designing and implementing UI components for web applications with the use of open-source library",
-            "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
-            "Developing Applications with React and maintaining",
-            "Using Figma for ease high-quality designs and Planning",
-            "Designing banners and making GIFs for advertising"
+                "Responsible for designing and implementing UI components for web applications with the use of open-source library",
+                "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
+                "Developing Applications with React and maintaining",
+                "Using Figma for ease high-quality designs and Planning",
+                "Designing banners and making GIFs for advertising"
             ]
         },
         {
@@ -43,16 +56,15 @@
             "location": "North Macedonia",
             "city": "Skopje",
             "about-skills": [
-            "Responsible for designing and implementing UI components for web applications with the use of open-source library",
-            "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
-            "Developing Applications with React and maintaining",
-            "Using Figma for ease high-quality designs and Planning",
-            "Designing banners and making GIFs for advertising"
+                "Responsible for designing and implementing UI components for web applications with the use of open-source library",
+                "work closely with web developers and backend engineers to create high-performing, responsive, and interactive web applications With Angular",
+                "Developing Applications with React and maintaining",
+                "Using Figma for ease high-quality designs and Planning",
+                "Designing banners and making GIFs for advertising"
             ]
         }
     ],
-    
-    "education":[
+    "education": [
         {
             "university-name": "IU International University of Applied Sciences",
             "graduate-title": "Bachelor's degree, Computer Science",
@@ -81,23 +93,33 @@
             ]
         }
     ],
-
-   
-
-    "email": "Ismo.bjr@gmail.com",
-
-    "projects" : {
+    "projects": {
         "Bflow": {
             "title": "B-Flow",
             "categori": "web-app",
             "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, deleniti voluptate? Inventore nisi id tenetur ad. Veniam necessitatibus ut odio, sequi quis architecto suscipit qui voluptates repudiandae, rerum sapiente illum.",
             "date": "2020",
-            "tools": ["React","Tailwind"],
+            "tools": [
+                "React",
+                "Tailwind"
+            ],
             "github": "https://github.com/IsmailBj/BFlow",
             "layout": {
-                "desktop": ["desktop-one.png","desktop-two.png","desktop-three.png"],
-                "tablet": ["tablet-one.png","tablet-two.png","tablet-three.png"],
-                "mobile": ["mobile-one.png","mobile-two.png","mobile-three.png"]
+                "desktop": [
+                    "desktop-one.png",
+                    "desktop-two.png",
+                    "desktop-three.png"
+                ],
+                "tablet": [
+                    "tablet-one.png",
+                    "tablet-two.png",
+                    "tablet-three.png"
+                ],
+                "mobile": [
+                    "mobile-one.png",
+                    "mobile-two.png",
+                    "mobile-three.png"
+                ]
             }
         }
     }

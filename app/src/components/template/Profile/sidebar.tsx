@@ -6,6 +6,8 @@ import Avatar from '../../../assets/img/userAvatar.png'
 import userData from '../../../data/userData.json'
 import { Mailto } from '../../functions/sendMail';
 import { openURL } from '../../functions/openURL';
+
+
 const Sidebar = (props: any) =>{
 
     const {
@@ -24,7 +26,7 @@ const Sidebar = (props: any) =>{
     function getAge() {
         let ageInMilliseconds:any = (new Date().getTime() - new Date('1999-11-28').getTime());
         return Math.floor(ageInMilliseconds/1000/60/60/24/365)
-     }
+    }
 
 
     return (
@@ -46,7 +48,6 @@ const Sidebar = (props: any) =>{
             </div>
         </div>
         <div className="info-contianer">
-               
             <div className="info-location">
                 <div className='residence'>
                     <span className='info'>Residence:</span>

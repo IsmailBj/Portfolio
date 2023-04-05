@@ -3,6 +3,8 @@ import "./headerRight.scss"
 import {faBars,faDownload} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 import {scrollCenter} from "../../functions/scrollPosition"
+import CV from "../../../assets/docs/cv.pdf"
+
 
 const Header = (props: any) =>{
 
@@ -24,7 +26,7 @@ const Header = (props: any) =>{
                     <div className="text">Education<div className="underline"></div></div>
                 </div>
             </div>
-            <div className="download-cv"><FontAwesomeIcon icon={faDownload}/><span>CV</span></div>
+            <a href={CV} target="blank" download="Resume"><div className="download-cv"><FontAwesomeIcon icon={faDownload}/><span>CV</span></div></a>
         </div>
     )
 }
