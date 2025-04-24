@@ -1,10 +1,15 @@
 import './aducation.scss'
 import {faUserGraduate} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
-import data from '../../../data/userData.json'
+import Data from '../../data/userData.json'
+import { UserData } from '../../interfaces/Interface';
 
-const aducation  = () => {
-    const {education} = data
+
+const typedData = Data as UserData;
+
+
+const Education: React.FC = () => {
+	const { education } = typedData;
     return (
         <div className="edu-contianer" id='education'>
             <div className="title-edu">Educations 
@@ -15,11 +20,11 @@ const aducation  = () => {
                     <div className="vertical"></div>
                     <div className="education first">
                     <div className="edu-info">
-                        <div className="date">{edu["start-date"]} - {edu["end-date"]}</div>
-                        <div className="edu-title">{edu['graduate-title']}</div>
-                        <div className="location"><span className='university-name'>{edu['university-name']}</span> - {edu.location}</div>
+                        <div className="date">{edu.startDate} - {edu.endDate}</div>
+                        <div className="edu-title">{edu.graduateTitle}</div>
+                        <div className="location"><span className='university-name'>{edu.universityName}</span> - {edu.location}</div>
                         <ul className="uni-info">
-                        {edu['about-skills'].map((skill, index)=> <li className="skill0info" key={index}>{skill}</li>)}
+                        {edu.aboutSkills.map((skill, index)=> <li className="skill0info" key={index}>{skill}</li>)}
                         </ul>
                     </div>
                     </div>
@@ -29,4 +34,4 @@ const aducation  = () => {
     )
 }
 
-export default aducation
+export default Education

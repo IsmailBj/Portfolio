@@ -1,10 +1,12 @@
-import React from "react"
 import './projects.scss'
-import ImgProject from '../../../assets/img/img-holder.png'
-import userData from '../../../data/userData.json'
+import ImgProject from '../../assets/img/img-holder.png'
+import Data from '../../data/userData.json'
+import { ProjectsProps, UserData } from '../../interfaces/Interface'
 
-const projects = (props: any) =>{
-    const {projects} = userData
+const data = Data as UserData;
+
+const Projects: React.FC<ProjectsProps> = ({setShowProject}) =>{
+    const {projects} = data
     const {Bflow} = projects
     
     return (
@@ -19,8 +21,8 @@ const projects = (props: any) =>{
             </div>
             <div className="projects-list">
 
-                <div className="project-box" onClick={()=> props.setShowProject(true)}>
-                    <img src={require(`../../../assets/img/projects/${Bflow.title}/${Bflow.title}-thumnail.png`)} alt="404" />
+                <div className="project-box" onClick={()=> setShowProject(true)}>
+                    <img src={require(`../../assets/img/projects/${Bflow.title}/${Bflow.title}-thumnail.png`)} alt="404" />
                     <div className="pro-title"> {Bflow.title}</div>
                 </div>
                 <div className="project-box">
@@ -49,4 +51,4 @@ const projects = (props: any) =>{
 }
 
 
-export default projects
+export default Projects

@@ -4,6 +4,7 @@
     "country": "North Macedonia",
     "city": "Skopje",
     "email": "Ismo.bjr@gmail.com",
+    "aboutInfo": "Hi, I'm Doing my Studies at IU International University of Applied Sciences, I completed Seavus academy and got the title full stack Web Development, I've dealt with many different types of technology throughout my life, I'm proficient at dealing with technical issues of all sorts, I have excellent communication skills, I work very well in groups.",
     "topSkills": [
         "Angular",
         "React",
@@ -34,13 +35,13 @@
     },
     "experience": [
         {
-            "work-title": "Front-End Developer",
+            "workTitle": "Front-End Developer",
             "company": "KeepITSimbple",
-            "start-date": "Aug,01,2021",
-            "end-date": "Present",
+            "startDate": "Aug,01,2021",
+            "endDate": "Present",
             "location": "North Macedonia",
             "city": "Skopje",
-            "about-skills": [
+            "aboutSkills": [
                 "Led the design and implementation of UI components for web applications by leveraging open-source libraries.",
                 "Collaborated closely with web developers and backend engineers to orchestrate the development of high-performance, responsive, and interactive web applications using Angular.",
                 "Spearheaded the development and maintenance of applications using React, ensuring their continued excellence.",
@@ -49,13 +50,13 @@
             ]
         },
         {
-            "work-title": "Front-End Indernship",
+            "workTitle": "Front-End Internship",
             "company": "Seavus",
-            "start-date": "Nov,01,2021",
-            "end-date": "Nov,01,2022",
+            "startDate": "Nov,01,2021",
+            "endDate": "Nov,01,2022",
             "location": "North Macedonia",
             "city": "Skopje",
-            "about-skills": [
+            "aboutSkills": [
                 "Proficient in the design and implementation of web application UI components utilizing open-source libraries",
                 "Collaborating closely with web developers and backend engineers to produce high-performance, responsive, and interactive web applications using Angular",
                 "Demonstrated expertise in the development and ongoing maintenance of applications using React",
@@ -66,26 +67,26 @@
     ],
     "education": [
         {
-            "university-name": "IU International University of Applied Sciences",
-            "graduate-title": "Bachelor's degree, Computer Science",
-            "start-date": "Aug,01,2021",
-            "end-date": "Nov,01,2024",
+            "universityName": "IU International University of Applied Sciences",
+            "graduateTitle": "Bachelor's degree, Computer Science",
+            "startDate": "Aug,01,2021",
+            "endDate": "Nov,01,2024",
             "location": "Germany",
             "city": "Erfurt",
-            "about-skills": [
+            "aboutSkills": [
                 "IU International University of Applied Sciences is a private, state-recognized University of Applied Sciences based in Erfurt",
-                "Java and spring boot advanced knowledgement and Object oriented programing (OOP)",
-                "Big data analytics with Python that process trends of uncovering, patterns, and correlations in large amounts of raw data to help make data-informed decisions."
+                "Java and Spring Boot advanced knowledge and Object-oriented programming (OOP)",
+                "Big data analytics with Python that processes trends of uncovering, patterns, and correlations in large amounts of raw data to help make data-informed decisions."
             ]
         },
         {
-            "university-name": "Seavus Education & Development Center",
-            "graduate-title": "Programming Academy",
-            "start-date": "Nov,11,2020",
-            "end-date": "Nov,11,2021",
+            "universityName": "Seavus Education & Development Center",
+            "graduateTitle": "Programming Academy",
+            "startDate": "Nov,11,2020",
+            "endDate": "Nov,11,2021",
             "location": "North Macedonia",
             "city": "Skopje",
-            "about-skills": [
+            "aboutSkills": [
                 "Proficient in utilizing the ASP.NET Web Development Frameworks for proficient back-end development",
                 "Experienced in employing various MV* (Model View *) patterns, including MVC, MVVM, and MVP",
                 "Adept at working with both relational and non-relational database management systems, encompassing Microsoft SQL and MongoDB",
@@ -96,7 +97,7 @@
     "projects": {
         "Bflow": {
             "title": "B-Flow",
-            "categori": "web-app",
+            "category": "web-app",
             "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, deleniti voluptate? Inventore nisi id tenetur ad. Veniam necessitatibus ut odio, sequi quis architecto suscipit qui voluptates repudiandae, rerum sapiente illum.",
             "date": "2020",
             "tools": [

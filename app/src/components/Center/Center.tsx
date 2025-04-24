@@ -1,14 +1,14 @@
-import  {useState} from "react";
+import  {useState, FC} from "react";
 import "./Center.scss"
-import AboutMe from './about/aboutMe'
-import Experience from './experience/experience'
-import Education from './aducation/aducation'
-import Projects from './projects/projects'
-import Project from './projects/projectInfo/project'
+import AboutMe from '../about/aboutMe'
+import Experience from '../experience/experience'
+import Education from '../aducation/aducation'
+import Projects from '../projects/projects'
+import Project from '../projects/projectInfo/project'
 
-const Center = (props: any) =>{
+const Center: FC = ()  =>{
 
-    const [showProject, setShowProject] = useState(false)
+    const [showProject, setShowProjectState] = useState<boolean>(false)
     
     return (
         !showProject ? (<>
@@ -18,7 +18,7 @@ const Center = (props: any) =>{
             </div>
             <div className="projects">
                 <Projects
-                    setShowProject={setShowProject}
+                    setShowProject={setShowProjectState}
                 />
             </div>
             <div className="experience">
@@ -30,7 +30,7 @@ const Center = (props: any) =>{
             </div>
         </>) : (<>
             <Project
-                setShowProject={setShowProject}
+                setShowProject={setShowProjectState}
             />
         </>)
     )

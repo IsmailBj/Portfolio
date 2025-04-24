@@ -1,9 +1,14 @@
 import './experience.scss'
 import {faLaptopCode} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
-import data from '../../../data/userData.json'
+import Data from '../../data/userData.json'
 
-const experience  = () => {
+import { UserData } from '../../interfaces/Interface';
+
+const data = Data as UserData;
+
+
+const Experience: React.FC  = () => {
 
     const {experience} = data
     
@@ -17,11 +22,11 @@ const experience  = () => {
                     <div className="vertical"></div>
                     <div className="experience first">
                     <div className="exp-info">
-                        <div className="date">{ex["start-date"]} - {ex["end-date"]}</div>
-                        <div className="work-title">{ex["work-title"]}</div>
+                        <div className="date">{ex.startDate} - {ex.endDate}</div>
+                        <div className="work-title">{ex.workTitle}</div>
                         <div className="location"><span className='company'>{ex.company}</span> - {ex.location}</div>
                         <ul className="work-info">
-                            {ex['about-skills'].map((skill, index)=> <li className="skill0info" key={index}>{skill}</li>)}
+                            {ex.aboutSkills.map((skill, index)=> <li className="skill0info" key={index}>{skill}</li>)}
                         </ul>
                     </div>
                 </div></div>
@@ -32,4 +37,4 @@ const experience  = () => {
     
 
 
-export default experience
+export default Experience

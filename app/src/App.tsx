@@ -1,14 +1,14 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, FC} from 'react';
 import './App.scss';
-import Profile from './components/template/Profile/sidebar'
-import Center from './components/template/Center'
-import Header from './components/template/header/headerRight'
-import { CheckDeviceMode } from './components/functions/CheckDeviceMode';
-import { debounce } from './components/functions/debounce';
-import LoadingPage from './components/template/loaderEffect/loadingPage';
-import MobHeader from './components/template/mobile/mobileHeader'
+import Profile from './components/Profile/sidebar'
+import Center from './components/Center/Center'
+import Header from './components/header/headerRight'
+import { CheckDeviceMode } from './functions/CheckDeviceMode';
+import { debounce } from './functions/debounce';
+import LoadingPage from './components/loaderEffect/loadingPage';
+import MobHeader from './components/mobile/mobileHeader'
 
-function App() {
+const App: FC = () => {
 
   const [isMenu, setIsMenu] = useState<boolean>(false)
   const [isProfile, setIsProfile] = useState<boolean>(false)
@@ -48,7 +48,6 @@ function App() {
               <Profile
                  isProfile={isProfile}
                  setIsProfile={setIsProfile}
-                 deviceView={deviceView}
               />
               <Center/>
                   <Header

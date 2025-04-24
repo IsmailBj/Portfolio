@@ -1,30 +1,32 @@
-import { useState } from 'react'
+import { useState, FC } from 'react'
 import './project.scss'
 import {faMobilePhone,faTablet, faDesktop} from "@fortawesome/free-solid-svg-icons"
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome"
-import userData from '../../../../data/userData.json'
+import Data from '../../../data/userData.json'
 import { openURL } from '../../../functions/openURL'
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
+import { ProjectsProps, UserData } from '../../../interfaces/Interface'
 import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
 import 'swiper/scss'
 
-const Project = (props: any) =>{
+const data  = Data as UserData
 
+const Project: FC<ProjectsProps> = ({setShowProject}) =>{
 
-    const {projects} = userData
+    const {projects} = data
     const {Bflow} = projects
     const [deviceMode, setDeviceMode] = useState('desktop')
     return (
         <div className="project-container">
             <div className="info-container">
-                <div className="close-container" onClick={()=> props.setShowProject(false)}>X</div>
+                <div className="close-container" onClick={()=> setShowProject(false)}>X</div>
                 <div className="project-title">
                     <div className="title">{Bflow.title}</div>
                     <div className="category-container">
                         <span className='category'>Category - </span>
-                        <span className='category-name'> {Bflow.categori} </span>
+                        <span className='category-name'> {Bflow.category} </span>
                     </div>
                 </div>
                 <div className='divider'></div>
@@ -71,7 +73,7 @@ const Project = (props: any) =>{
                    >
                     <div className='moveceter'>
                         {Bflow.layout[deviceMode as keyof typeof Bflow.layout].map((image:string, key:number)=>{
-                            return  <SwiperSlide key={key}><img src={require(`../../../../assets/img/projects/${Bflow.title}/${deviceMode}/${image}`)} alt="" /> </SwiperSlide>
+                            return  <SwiperSlide key={key}><img src={require(`../../../assets/img/projects/${Bflow.title}/${deviceMode}/${image}`)} alt="" /> </SwiperSlide>
                         })}
                     </div>
                    </Swiper>

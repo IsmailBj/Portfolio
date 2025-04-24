@@ -1,14 +1,12 @@
-import React from "react";
 import "./headerRight.scss"
 import {faBars,faDownload} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 import {scrollCenter} from "../../functions/scrollPosition"
-import CV from "../../../assets/docs/cv.pdf"
+import CV from "../../assets/docs/cv.pdf"
+import { HeaderProps } from "../../interfaces/Interface";
 
 
-const Header = (props: any) =>{
-
-    const {setIsMenu, isMenu,deviceView} = props
+const Header: React.FC<HeaderProps> = ({setIsMenu, isMenu, deviceView}) =>{
     
     return (
         <div className={`header-container`}>
@@ -26,7 +24,7 @@ const Header = (props: any) =>{
                     <div className="text">Education<div className="underline"></div></div>
                 </div>
             </div>
-            <a href={CV} target="blank" download="Resume"><div className="download-cv"><FontAwesomeIcon icon={faDownload}/><span>CV</span></div></a>
+            <a href={CV} target="_blank" download="Resume" rel="noreferrer"><div className="download-cv"><FontAwesomeIcon icon={faDownload}/><span>CV</span></div></a>
         </div>
     )
 }

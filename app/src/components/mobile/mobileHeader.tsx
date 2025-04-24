@@ -1,10 +1,9 @@
 import './mobileHeader.scss'
 import {faBars, faEllipsisV} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
+import { HeaderMobProps } from '../../interfaces/Interface';
 
-const Header = (props: any) =>{
-
-    const {setIsMenu, isMenu, setIsProfile,isProfile} = props
+const Header: React.FC<HeaderMobProps> = ({setIsMenu, isMenu, setIsProfile, isProfile}) =>{
     
     return (
         <div className={`headerMob-container`}>

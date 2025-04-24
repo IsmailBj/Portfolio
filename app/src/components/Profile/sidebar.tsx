@@ -2,13 +2,13 @@ import './sidebar.scss'
 import {FontAwesomeIcon}  from "@fortawesome/react-fontawesome";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faCheckCircle, faTrophy, faStar, faLaptopCode,faArrowLeft} from "@fortawesome/free-solid-svg-icons";
-import Avatar from '../../../assets/img/userAvatar.png'
-import userData from '../../../data/userData.json'
+import Avatar from '../../assets/img/userAvatar.png'
+import userData from '../../data/userData.json'
 import { Mailto } from '../../functions/sendMail';
 import { openURL } from '../../functions/openURL';
+import { SidebarProps, UserData } from '../../interfaces/Interface';
 
-
-const Sidebar = (props: any) =>{
+const Sidebar = (props: SidebarProps) =>{
 
     const {
         name,
@@ -19,13 +19,15 @@ const Sidebar = (props: any) =>{
         email,
         topSkills,
         media
-    } = userData
+    } = userData as UserData
     
-    const {isProfile,setIsProfile} = props
+    const {isProfile, setIsProfile} = props
 
+    
     function getAge() {
-        let ageInMilliseconds:any = (new Date().getTime() - new Date('1999-11-28').getTime());
-        return Math.floor(ageInMilliseconds/1000/60/60/24/365)
+        const birthDate = '1999-11-28';
+        let ageInMilliseconds = new Date().getTime() - new Date(birthDate).getTime();
+        return Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24 / 365);
     }
 
 

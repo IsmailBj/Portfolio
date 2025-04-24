@@ -1,6 +1,6 @@
-@import  "../../../variables.scss";
+@import  "../../variables.scss";
 
-.edu-contianer{
+.exp-contianer{
     display: flex;
     width: calc(100% - 80px);
     padding: 40px 20px;
@@ -8,7 +8,7 @@
     flex-direction: column;
     background: $linear-bg;
     margin: 20px;
-    .title-edu{
+    .title-exp{
         width: 200px;
         background: $linear-bg;
         border: 1px solid $color-dark;
@@ -19,7 +19,6 @@
         color: $color-white;
         display: flex;
         flex-direction: column;
-        text-align: center;
         svg{
             padding: 10px 0 5px 0;
         }
@@ -31,12 +30,11 @@
         background-color: $color-dark;
         border-radius: 20px;
     }
-
-    .education-center{
+    .experience-center{
         display: flex;
         flex-direction: column;
         align-items: center;
-        .education{
+        .experience{
             color: $color-white;
             position: relative;
             background: $linear-bg;
@@ -44,13 +42,13 @@
             box-shadow: 4px 4px 4px 0 $shadow;
             width: 30vw;
             padding: 20px;
-            .edu-info{
+            .exp-info{
                 .date{
                     float: right;
                     color: $color-dark;
                 }
-                .edu-title{
-                    font-size: 1.5rem;
+                .work-title{
+                    font-size: 2rem;
                     
                 }
                 .location{
@@ -61,7 +59,7 @@
                         font-size: 1.2rem;
                     }
                 }
-                .uni-info{
+                .work-info{
                     width: calc(100% - 40px);
                     line-height: 20px;
                     font-size: 16px;
@@ -71,15 +69,13 @@
         }
     }
 
-
-    
 }
 
-.main-container.laptop,.main-container.tablet{
+.main-container.laptop, .main-container.tablet{
     .center-container{
-        .education{
-            .edu-contianer{
-                .education{
+        .experience{
+            .exp-contianer{
+                .experience{
                     width: 65%;
                 }
             }
@@ -90,9 +86,9 @@
 
 .main-container.mobile{
     .center-container{
-        .education{
-            .edu-contianer{
-                .education{
+        .experience{
+            .exp-contianer{
+                .experience{
                     width: 90%;
                 }
             }
@@ -100,3 +96,6 @@
         
     }
 }
+
+
+
