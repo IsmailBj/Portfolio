@@ -10,10 +10,10 @@ import MobHeader from './components/template/mobile/mobileHeader'
 
 function App() {
 
-  const [isMenu, setIsMenu] = useState(false)
-  const [isProfile, setIsProfile] = useState(false)
-  const [deviceView, setDeviceView] = useState('')
-  const [loading, setLoading] = useState(true)
+  const [isMenu, setIsMenu] = useState<boolean>(false)
+  const [isProfile, setIsProfile] = useState<boolean>(false)
+	const [deviceView, setDeviceView] = useState<'mobile' | 'tablet' | 'desktop' | ''>('');
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(()=>{
     CheckDeviceMode(setDeviceView)
@@ -56,7 +56,6 @@ function App() {
                     setIsMenu={setIsMenu}
                     deviceView={deviceView}
                 />
- 
       </div>
     </>)
  
