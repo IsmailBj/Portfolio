@@ -1,96 +1,93 @@
 {
-    "name": "Ismail",
-    "surname": "Bajrami",
-    "country": "North Macedonia",
-    "city": "Skopje",
-    "email": "Ismo.bjr@gmail.com",
-    "aboutInfo": "Hi, I'm Doing my Studies at IU International University of Applied Sciences, I completed Seavus academy and got the title full stack Web Development, I've dealt with many different types of technology throughout my life, I'm proficient at dealing with technical issues of all sorts, I have excellent communication skills, I work very well in groups.",
+    "name": "John",
+    "surname": "Doe",
+    "country": "Fakeland",
+    "city": "Dummycity",
+    "email": "john.doe@fakeemail.com",
+    "aboutInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non mauris sit amet lorem consectetur posuere.",
     "topSkills": [
-        "Angular",
+        "JavaScript",
         "React",
-        "Typescript",
-        "Node.js"
+        "Node.js",
+        "HTML"
     ],
     "skills": [
-        "Git Gitlab/Github",
+        "Git",
         "MongoDB",
         "PostgreSQL",
+        "Docker",
         "Firebase",
-        "Pandas",
-        "Pycharm"
+        "Python"
     ],
     "media": {
         "linkedIn": {
-            "url": "https://www.linkedin.com/in/ismail-bajrami-b8aa82193/",
+            "url": "https://www.linkedin.com/in/johndoe",
             "name": "LinkedIn"
         },
         "github": {
-            "url": "https://github.com/IsmailBj",
-            "name": "Github"
+            "url": "https://github.com/johndoe",
+            "name": "GitHub"
         },
         "gitlab": {
-            "url": "https://gitlab.com/ismo.bjr",
-            "name": "Gitlab"
+            "url": "https://gitlab.com/johndoe",
+            "name": "GitLab"
         }
     },
     "experience": [
         {
             "workTitle": "Front-End Developer",
-            "company": "KeepITSimbple",
-            "startDate": "Aug,01,2021",
+            "company": "FakeCompany",
+            "startDate": "Jan,01,2020",
             "endDate": "Present",
-            "location": "North Macedonia",
-            "city": "Skopje",
+            "location": "Fakeland",
+            "city": "Dummycity",
             "aboutSkills": [
-                "Led the design and implementation of UI components for web applications by leveraging open-source libraries.",
-                "Collaborated closely with web developers and backend engineers to orchestrate the development of high-performance, responsive, and interactive web applications using Angular.",
-                "Spearheaded the development and maintenance of applications using React, ensuring their continued excellence.",
-                "Utilized Figma as a tool for streamlined production of high-quality designs and efficient project planning.",
-                "Designed captivating banners and crafted GIFs tailored for effective advertising campaigns."
+                "Developed responsive UI components using React.",
+                "Collaborated with backend engineers to build high-performance web applications.",
+                "Optimized application performance and UX.",
+                "Implemented REST APIs integration and state management with Redux."
             ]
         },
         {
-            "workTitle": "Front-End Internship",
-            "company": "Seavus",
-            "startDate": "Nov,01,2021",
-            "endDate": "Nov,01,2022",
-            "location": "North Macedonia",
-            "city": "Skopje",
+            "workTitle": "Junior Developer",
+            "company": "TechLab",
+            "startDate": "Feb,01,2018",
+            "endDate": "Dec,31,2019",
+            "location": "Fakeland",
+            "city": "TechCity",
             "aboutSkills": [
-                "Proficient in the design and implementation of web application UI components utilizing open-source libraries",
-                "Collaborating closely with web developers and backend engineers to produce high-performance, responsive, and interactive web applications using Angular",
-                "Demonstrated expertise in the development and ongoing maintenance of applications using React",
-                "Utilizing Figma for streamlined creation of high-quality designs and effective project planning",
-                "Proficiently designing banners and crafting GIFs for advertising purposes"
+                "Worked on UI development using HTML, CSS, and JavaScript.",
+                "Assisted in the integration of third-party APIs.",
+                "Implemented custom web solutions with Angular and TypeScript.",
+                "Collaborated with designers and product managers to create seamless user experiences."
             ]
         }
     ],
     "education": [
         {
-            "universityName": "IU International University of Applied Sciences",
+            "universityName": "FakeTech University",
             "graduateTitle": "Bachelor's degree, Computer Science",
-            "startDate": "Aug,01,2021",
-            "endDate": "Nov,01,2024",
-            "location": "Germany",
-            "city": "Erfurt",
+            "startDate": "Sep,01,2016",
+            "endDate": "Jun,01,2020",
+            "location": "Techland",
+            "city": "InnovateCity",
             "aboutSkills": [
-                "IU International University of Applied Sciences is a private, state-recognized University of Applied Sciences based in Erfurt",
-                "Java and Spring Boot advanced knowledge and Object-oriented programming (OOP)",
-                "Big data analytics with Python that processes trends of uncovering, patterns, and correlations in large amounts of raw data to help make data-informed decisions."
+                "Studied advanced data structures, algorithms, and software engineering principles.",
+                "Built and deployed full-stack web applications.",
+                "Learned cloud computing fundamentals and IoT development."
             ]
         },
         {
-            "universityName": "Seavus Education & Development Center",
-            "graduateTitle": "Programming Academy",
-            "startDate": "Nov,11,2020",
-            "endDate": "Nov,11,2021",
-            "location": "North Macedonia",
-            "city": "Skopje",
+            "universityName": "TechBootcamp Academy",
+            "graduateTitle": "Web Development Bootcamp",
+            "startDate": "Mar,01,2015",
+            "endDate": "Nov,01,2015",
+            "location": "DevCity",
+            "city": "DevCity",
             "aboutSkills": [
-                "Proficient in utilizing the ASP.NET Web Development Frameworks for proficient back-end development",
-                "Experienced in employing various MV* (Model View *) patterns, including MVC, MVVM, and MVP",
-                "Adept at working with both relational and non-relational database management systems, encompassing Microsoft SQL and MongoDB",
-                "Comprehensive understanding of the principles underlying IaaS, PaaS, and SaaS within the realm of cloud computing"
+                "Completed full-stack web development bootcamp focused on JavaScript, React, and Node.js.",
+                "Built several projects involving RESTful APIs and modern JavaScript frameworks.",
+                "Gained expertise in responsive web design and performance optimization."
             ]
         }
     ],
@@ -98,13 +95,13 @@
         "Bflow": {
             "title": "B-Flow",
             "category": "web-app",
-            "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, deleniti voluptate? Inventore nisi id tenetur ad. Veniam necessitatibus ut odio, sequi quis architecto suscipit qui voluptates repudiandae, rerum sapiente illum.",
-            "date": "2020",
+            "about": "A web application designed to manage workflows and tasks with a sleek interface.",
+            "date": "2023",
             "tools": [
                 "React",
-                "Tailwind"
+                "Tailwind CSS"
             ],
-            "github": "https://github.com/IsmailBj/BFlow",
+            "github": "https://github.com/johndoe/BFlow",
             "layout": {
                 "desktop": [
                     "desktop-one.png",
@@ -120,6 +117,35 @@
                     "mobile-one.png",
                     "mobile-two.png",
                     "mobile-three.png"
+                ]
+            }
+        },
+        "TechBlog": {
+            "title": "Tech Blog",
+            "category": "web-app",
+            "about": "A blogging platform to share tech articles and tutorials.",
+            "date": "2022",
+            "tools": [
+                "React",
+                "Node.js",
+                "Express"
+            ],
+            "github": "https://github.com/johndoe/TechBlog",
+            "layout": {
+                "desktop": [
+                    "desktop-four.png",
+                    "desktop-five.png",
+                    "desktop-six.png"
+                ],
+                "tablet": [
+                    "tablet-four.png",
+                    "tablet-five.png",
+                    "tablet-six.png"
+                ],
+                "mobile": [
+                    "mobile-four.png",
+                    "mobile-five.png",
+                    "mobile-six.png"
                 ]
             }
         }
